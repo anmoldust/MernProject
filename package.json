@@ -1,45 +1,47 @@
 {
-  "name": "user",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon src/server.ts",
-    "format:fix": "prettier . --write",
-    "format:check": "prettier . --check",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:check": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "prepare": "husky"
-  },
-  "repository": {
-    "type": "git",
-    "url": " "
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/eslint__js": "^8.42.3",
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.10.3",
-    "eslint-js": "github:eslint/js",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.3.0",
-    "nodemon": "^3.1.9",
-    "prettier": "3.4.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.7.2",
-    "typescript-eslint": "^8.19.0"
-  },
-  "lint-staged": {
-    "*.ts": [
-      "npm run format:fix",
-      "npm run lint:fix"
-    ]
-  },
-  "dependencies": {
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "user": "file:"
-  }
+    "name": "user",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/server.ts",
+        "format:fix": "prettier . --write",
+        "format:check": "prettier . --check",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "prepare": "husky"
+    },
+    "repository": {
+        "type": "git",
+        "url": " "
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@types/eslint__js": "^8.42.3",
+        "@types/express": "^5.0.0",
+        "@types/node": "^22.10.3",
+        "@types/winston": "^2.4.4",
+        "eslint-js": "github:eslint/js",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.3.0",
+        "nodemon": "^3.1.9",
+        "prettier": "3.4.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.7.2",
+        "typescript-eslint": "^8.19.0"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "npm run format:fix",
+            "npm run lint:fix"
+        ]
+    },
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "user": "file:",
+        "winston": "^3.17.0"
+    }
 }
